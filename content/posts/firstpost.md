@@ -1,4 +1,6 @@
-title: first post
+title: Learning Flask
 date: 2022-10-11
 
-This is a first post on the website. I enjoy webdev and want to learn more about it. My favorite part is that you can build cool things, like a blog.
+BOOOM! It's up. 
+
+This is the start of journey using Flask, it's fun. I have a lot to learn.
