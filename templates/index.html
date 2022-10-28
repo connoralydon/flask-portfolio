@@ -1,0 +1,163 @@
+{% extends "base.html" %}
+
+{% block head %} 
+    <title>Connor Lydon's Portfolio</title>
+    
+    <!-- open graph meta data, social sharing previews-->
+    <!-- so if it is shared it will look pretty and show this information-->
+    <meta property="og:title" content="Connor Lydon's Portfolio">
+    <meta property="og:description" content="This is a living website to showcase experience and projects by Connor Lydon.">
+    <meta property="og:image" content="img/headshot.JPG">
+    <meta property="og:url" content="index.html">
+    <meta property="og:site_name" content="Connor Lydon's Portfolio">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image:alt" content="image description">
+
+    <!-- links style sheet and icon that shows in tab-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="img/headshot.ico">
+{% endblock %}
+
+
+{% block body %} 
+
+<header class="flex-col">
+    Connor Lydon
+    <h2>
+        {{ portfolio_data.title }}
+    </h2>
+</header>
+
+
+<section class="flex-row-col" id="row1">
+
+    <section class="flex-col" id="col-1">
+      <section class="flex-row-col short-text bordered-element" >
+        <img class="bordered-element center-object" id="headshot" src="img/headshot.png" alt="Headshot of Connor Lydon">
+        <div class="flex-col">
+          <div class="bordered-element-header">My Purpose</div>
+          {{ portfolio_data.purpose }}
+        </div>
+      </section>
+
+      <div class="short-text bordered-element" id="whoiam">
+        <div class="bordered-element-header">Who I Am</div>
+        {{ portfolio_data.whoiam }}
+      </div>
+
+    </section>
+
+    <hr>
+
+    <section class="flex-col" id="col-2 ">
+      <table>
+        <th colspan="2">Personal Information</th>
+        <tr>
+          <td>Name</td>
+          <td class="bold">Connor Lydon</td>
+        </tr>
+
+        <tr>
+          <td>Occupation</td>
+          <td>Software Engineering Intern</td>
+        </tr>
+
+        <tr>
+          <td>Employer</td>
+          <td><a href="https://www.toyota.com/racing/">Toyota Racing Development (TRD)</a></td>
+        </tr>
+
+        <tr>
+          <td>Resume</td>
+          <td><a target="_blank" href="files/ConnorLydonResume.pdf">ConnorLydonResume.pdf</a></td>
+        </tr>
+
+        <tr>
+          <td>
+            Education
+            <img class="table-img" src="img/icons/chapman-logo.ashx.png" alt="Chapman Fenestra Logo">
+          </td>
+          <td>
+            BS Data Analytics<br>
+            <a href="https://www.chapman.edu/engineering/index.aspx">Fowler School of Engineering</a>
+            <br>
+          </td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td>BS Business Economics<br>
+          <a href="https://www.chapman.edu/business/index.aspx">Argyros School of Business & Economics</a>
+        </td>
+        </tr>
+
+      </table>
+      <table>
+        <th colspan="2">Contact</th>
+        <tr>
+          <td>Email</td>
+          <td><a href="mailto:connoralydon.biz@gmail.com">connoralydon.biz@gmail.com</a></td>
+        </tr>
+
+        <tr>
+          <td>LinkedIn</td>
+          <td><a target="_blank" href="https://www.linkedin.com/in/connoralydon/">connoralydon</a></td>
+        </tr>
+
+        <tr>
+          <td>
+            Github
+          </td>
+          <td><a target="_blank" href="https://github.com/connoralydon">connoralydon</a></td>
+        </tr>
+        </body>
+      </table>
+    </section>
+
+  </section>
+
+  <hr>
+
+<!-- migrate this to blog posts -->
+  <section class="flex-row-col" id="row-2">
+    <table id="col-1">
+      <th colspan="3">Projects</th>
+      <tr class="table-info">
+        <td class="table-date">Date</td>
+        <td>Name</td>
+        <td cla>Link</td>
+      </tr>
+      <tr>
+        <td>Apr. 2022</td>
+        <td>Optimal New Store Locations using Census & Sales Data</td>
+        <td><a href="files/store_analysis_written.pdf">Written Analysis</a></td>
+      </tr>
+      <tr>
+        <td>Mar. 2022</td>
+        <td>Event Detection & Analysis with Twitter Data</td>
+        <td><a href="files/airline_pres.pdf">Presentation</a></td>
+      </tr>
+      <tr>
+        <td>Dec. 2021</td>
+        <td>MYSQL Python Interface & Database</td>
+        <td><a href="https://github.com/tarekel96/Python_SQL_MagazineApp">Python_SQL_MagazineApp</a></td>
+      </tr>
+
+      <tr>
+        <td>Dec. 2021</td>
+        <td>Customer Segmentation Analysis w/ Census Data & Python</td>
+        <td><a target="_blank" href="files/census_final_pres.pdf">Final Presentation</a></td>
+      </tr>
+
+      <tr>
+        <td>Nov. 2021</td>
+        <td>ECOS Lab Experiment Visualization</td>
+        <td><a target="_blank" href="https://github.com/connoralydon/ECOS_visualizations">ECOS_visualizations</a></td>
+      </tr>
+
+
+    </table>
+  </section>
+
+  {% endblock%}
+

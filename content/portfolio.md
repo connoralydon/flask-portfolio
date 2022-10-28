@@ -1,0 +1,5 @@
+title: Software Engineering & Data Science
+
+purpose: As a Software Engineer and Data Scientist, I strive to empower people to make more informed strategy decisions. I use data exploration, data visualization, advanced linear modeling, and reports on demand to find the “needle in the haystack” within your data.
+
+whoiam: I am a 2022 graduate of Chapman University with a degree in Data Science and Economics, currently looking for a full-time position in Software Engineering, Data Science, and/or Data Engineering. After my graduation from Chapman with departmental honors as the top student in Data Analytics, I worked as a Software Engineering Intern at Toyota Racing Development where I implemented a full-stack application utilizing Python and to save component build time and save Toyota $10,000 annually in labor and material costs. Through my many experiences working on Data Science projects, I've have learned that I enjoy working on the engineering side of tech. I'm currently looking for a position where I can learn and be a valued part of a team.
