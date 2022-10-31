@@ -37,6 +37,7 @@ def posts():
     posts = [p for p in flatpages if p.path.startswith(POSTS_DIR)]
     posts.sort(key=lambda item:item['date'], reverse=False) # sorting oldest to newest
     return render_template('posts.html', posts=posts)
+    # 
 
 # blogpost
 @app.route("/posts/<name>/")

@@ -15,12 +15,14 @@
 
 
     <!-- links style sheet and icon that shows in tab-->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}"> -->
     <link rel="shortcut icon" type="image/x-icon" href="img/headshot.ico">
 {% endblock %}
 
 {% block body %} 
     {% for post in posts %}
+        <a href="/">home</a>
+        <br>
         <a href="{{ url_for('post', name=post.path.replace('posts/', '')) }}">
             {{ post.title }}
         </a>
